@@ -1,0 +1,5 @@
+/* Table wrapper */
+#table_wrapper1 {
+  height: 350px;
+  overflow: auto;
+}

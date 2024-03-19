@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  padding: 20px;
+  background-color: #F5F5F5;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* Table wrapper 1 */
+#table_wrapper1 {
+  height: 300px;
+  width: 600px;
+  overflow: auto;
+}
+
+/* Tables */
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  width: max-content;
+}
+
+/* Table head */
+#table thead, #table th {
+  position: sticky;
+  background-color: #ADD9E6;
+  width: max-content;
+}
+
+#table thead {
+  top: 0;
+  z-index: 2;
+}
+
+/* Table cells */
+#table td {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Start lines */
+#table th {
+  left: 0;
+  z-index: 1;
+  padding: 10px 40px;
+}
+
+/* Bol */
+#table th,
+thead td {
+  font-weight: bold;
+  background-color: #ADD9E6;
+}
+
+/* Colors for Even and Odd rows */
+tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+tr:nth-child(even) {
+  background-color: #E9E9E9;
+}
+
+/* Fixed empty block */
+.empty_field {
+  background-color: #ADD9E6;
+  left: 0;
+  z-index: 50;
+  position: sticky;
+}
